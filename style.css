@@ -12,12 +12,28 @@ body {
 }
 
 .galeria img {
-    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
     border-radius: 12px; 
+    width: 100%;
 }
 
 @media (max-width: 599px) {
     .galeria img{
+        width: 100%;
         max-width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 839px) {
+    .galeria img {
+        width: calc(50% - 8px);
+    }
+}
+
+@media (min-width: 840px) {
+    .galeria img {
+        width: calc(33.33% - 8px);
+        max-width: 300px;
     }
 }
