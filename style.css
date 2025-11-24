@@ -9,6 +9,8 @@ body {
     flex-wrap: wrap;
     gap: 8px; 
     justify-content: center;
+    max-width: 960px;
+    margin: 0 auto;  
 }
 
 .galeria img {
@@ -36,4 +38,9 @@ body {
         width: calc(33.33% - 8px);
         max-width: 300px;
     }
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 15px rgb(1, 110, 65);
 }
